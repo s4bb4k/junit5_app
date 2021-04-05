@@ -30,6 +30,7 @@ class CuentaTest {
     void testReferenciaCuenta() {
        Cuenta cuenta1 = new Cuenta("john doe", new BigDecimal("8900.9997"));
        Cuenta cuenta2 = new Cuenta("john doe", new BigDecimal("8900.9997"));
-       assertNotEquals(cuenta1, cuenta2);
+//       assertNotEquals(cuenta1, cuenta2);
+       assertEquals(cuenta1, cuenta2);
     }
 }
